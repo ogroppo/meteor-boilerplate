@@ -1,0 +1,38 @@
+@import "{}/client/toolkit/vars.scss";
+
+@mixin ellipsis{
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	max-width: 100%;
+}
+
+@mixin dots{
+	&:after{
+		content: "..";
+		display: inline;
+	}
+}
+
+@mixin unselectable{
+	user-select: none;
+}
+
+@mixin centerX{
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+@mixin centerY{
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+@mixin centerXY{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
