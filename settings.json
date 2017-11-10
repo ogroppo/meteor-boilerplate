@@ -2,10 +2,5 @@
 	"public": {
 
 	},
-
-	"private": {
-		
-	},
-
-	"ENV": "local"
+	"env": "local"
 }
